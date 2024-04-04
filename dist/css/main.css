@@ -1,3 +1,58 @@
+* {
+  box-sizing: border-box; }
+
 body {
   background-color: #444;
-  color: #fff; }
+  color: #fff;
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+  overflow: hidden; }
+  body#bg-img {
+    background: url(/dist/img/background.jpg);
+    background-attachment: fixed;
+    object-fit: cover; }
+    body#bg-img::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: rgba(68, 68, 68, 0.9); }
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: 400; }
+  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+    font-size: 6rem; }
+    h1.lg-heading .text-secondary, h2.lg-heading .text-secondary, h3.lg-heading .text-secondary {
+      color: #eece1a; }
+  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+    margin-bottom: 2rem;
+    padding: 0.2rem 1rem;
+    background: rgba(73, 73, 73, 0.5); }
+  h1 a, h2 a, h3 a {
+    color: #fff;
+    text-decoration: none; }
+  h1 header, h2 header, h3 header {
+    position: fixed;
+    z-index: 2;
+    width: 100%; }
+
+main {
+  padding: 4rem;
+  height: 100%; }
+  main .icons {
+    margin-top: 1rem; }
+    main .icons a {
+      padding: 0.4rem;
+      color: #fff; }
+      main .icons a .fa-facebook-square:hover, main .icons a .fa-linkedin-square:hover, main .icons a .fa-twitter-square:hover {
+        color: #0f67cc;
+        transition: all 1.5s ease-out; }
+      main .icons a .fa-github-square:hover {
+        color: whitesmoke;
+        transition: all 1.5s ease-out; }
